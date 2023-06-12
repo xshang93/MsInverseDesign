@@ -4,7 +4,7 @@ Xiao Shang
 
 email: xiao.shang@mail.utoronto.ca
 
-![TheFrmework](https://github.com/xshang93/MsInverseDesign/blob/main/figures/abstract.jpg)
+![TheFrmework](https://github.com/xshang93/MsInverseDesign/blob/main/figures/abstract.png)
 
 We report a framework that provides an end-to-end solution to achieve application-specific mechanical properties by microstructure optimization. In this study, we select the widely used Ti-6Al-4V to demonstrate the effectiveness of this framework by tailoring its microstructure and achieving various yield strength and elastic modulus across a large design space, while minimizing the stress concentration factor. Compared with conventional methods, our framework is efficient, versatile, and readily transferrable to other materials and properties.
 
