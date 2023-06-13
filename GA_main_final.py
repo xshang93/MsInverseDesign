@@ -259,7 +259,7 @@ checkpoint.restore(checkpoint_dir+'/ckpt-{0}'.format(checkpoint_id))
                     
 # ----------------------name of the optimization run---------------------------------------#
 alpha = 1 # 0 or 1. use phase ratio as optimization parameter or not
-run_name = '20230415_{0}_obj{1}_alpha{2}_rand{3}_kt'.format(int(n_priorBeta_glb),obj_select,alpha,random_seed)
+run_name = '{0}_obj{1}_alpha{2}_rand{3}_kt'.format(int(n_priorBeta_glb),obj_select,alpha,random_seed)
 save_name_opt = run_name
 model = load(result_dir+'HP_result'+save_name+'.pkl').best_estimator_
 
@@ -333,12 +333,12 @@ ga_instance.run()
 # Plot fitness
 ga_instance.plot_fitness(
         title = 'Generation VS Fitness {0}'.format(run_name),
-        xlabel = 'Fitness',ylabel = 'Generation',
+        xlabel = 'Generation',ylabel = 'Objective function fitness',
         linewidth = 3,
         font_size = 14,
         plot_type = 'plot',
         color = "#3870FF",
-        save_dir = './'+run_name+'/fitness_plot.svg'
+        save_dir = './fitness_plot.svg'
         )
 
 
@@ -355,7 +355,7 @@ eng.quit()
 if ga_instance.best_solution_generation != -1:
     print("Best fitness value reached after {best_solution_generation} generations.".format(best_solution_generation=ga_instance.best_solution_generation))
 
-file_name = './'+run_name+'/result'
+file_name = './result'
 # save results
 ga_instance.save(filename=file_name)
 
