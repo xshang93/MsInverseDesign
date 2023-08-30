@@ -16,6 +16,7 @@ We report a framework that provides an end-to-end solution to achieve applicatio
 - Tensorflow 2.10.1
 - Pandas 1.5.3
 - PyGAD 2.18.1 (https://pygad.readthedocs.io/en/latest/) An open-source Python library for building the genetic algorithm.
+- Pymoo 0.6.0.1 (https://pymoo.org/) An open-source framework for state of the art single- and multi-objective optimization algorithms.
 - python 3.9.16
 - Scikeras 0.9.0
 - Sklearn 1.0.2
